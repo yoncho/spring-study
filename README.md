@@ -6,3 +6,5 @@
 
 //08.28 :  Chapter 2. 마무리 / Chatper 3. 시작
 // Chapter 2. QnA link : https://www.notion.so/Q-Spring-_-5-d3d601a4a7244aa2a51927c09f9932e7
+
+// Chapter 3. 7단계 [30] (Java Spring 애플리케이션에 의존성이 있는 이유가 무엇일까요?)
