@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ComponentScan
-public class testMain {
+public class RealWorldSpringContextLauncherApplication {
 
 	public static void main(String[] args) {
-		try(var context = new AnnotationConfigApplicationContext(testMain.class)){
+		try(var context = new AnnotationConfigApplicationContext(RealWorldSpringContextLauncherApplication.class)){
 			System.out.println(context.getBean(BusinessCalculationService.class).findMax());
 		};
 		

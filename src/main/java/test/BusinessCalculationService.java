@@ -2,12 +2,10 @@ package test;
 
 import java.util.Arrays;
 
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
-
-import com.poscodx.springstudy.examples.a1.DepInjectionLaucherApplication;
 
 interface DataService{
 	int[] retrieveData();
@@ -27,22 +25,18 @@ class MongoDbDataService implements DataService{
 	}
 	
 }
+
 @Component
+@Qualifier("mysql")
 class MySQLDataService implements DataService{
-	
-	//@Autowired
-	public MySQLDataService() {
-		
-	}
 	
 	@Override
 	public int[] retrieveData() {
 		return new int[] {1, 2, 3, 4, 5};
 	}
-	
 }
 
-@Configuration
+@Component
 public class BusinessCalculationService {
 	private DataService dataService;
 	
