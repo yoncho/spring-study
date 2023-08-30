@@ -12,3 +12,8 @@
 //08.29 : Chapter 3. 마무리 / Chapter 4. 시작 
 // Chapter 3. Annotation 정리 : https://www.notion.so/Q-Annotation-6a536ed9a7b443fcbeee88695f9612f4
 // Chapter 4. 0단계 [33] (코드 백업 및 단계별 정리 사항:코드참조 및 디버깅)
+
+
+//08.30 : Chapter 4. 7단계 [40] (Spring Framework 및 Java를 통해 Jakarta CDI 알아보기)
+// @Component => @Named
+// @Autowired => @Inject  
