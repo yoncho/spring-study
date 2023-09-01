@@ -3,15 +3,16 @@ package test;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 interface DataService{
 	int[] retrieveData();
 }
 
-@Component
+//@Component
+@Repository
 @Primary
 class MongoDbDataService implements DataService{
 	
@@ -26,7 +27,7 @@ class MongoDbDataService implements DataService{
 	
 }
 
-@Component
+@Repository
 @Qualifier("mysql")
 class MySQLDataService implements DataService{
 	
@@ -36,7 +37,7 @@ class MySQLDataService implements DataService{
 	}
 }
 
-@Component
+@Service
 public class BusinessCalculationService {
 	private DataService dataService;
 	

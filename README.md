@@ -17,3 +17,5 @@
 //08.30 : Chapter 4. 7단계 [40] (Spring Framework 및 Java를 통해 Jakarta CDI 알아보기)
 // @Component => @Named
 // @Autowired => @Inject  
+
+//09.01 : Chapter 5. 1단계 [50] (SpringBoot 시작하기)
