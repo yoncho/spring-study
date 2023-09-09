@@ -22,3 +22,5 @@
 
 //09.02 : Chapter 5. 13단계 [61] (Spring Boot, Spring, Spring MVC 이해하기)
 // Boot GIT : https://github.com/yoncho/spring-boot-study
+
+//09.09 : Chapter 6. 1단계 [64] (JAP와 Hibernate 시작하기 - 목표)
